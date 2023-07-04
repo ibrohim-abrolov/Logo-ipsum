@@ -6,19 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logo ipsum</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/scss/_normalize.scss">
 </head>
 <body>
     
-    <!--   Header start   -->
-    <header class="site-header">
-        <div class="container"></div>
-    </header>
-    <!--   Header finish  -->
-
     <main class="site-main">
         <!--   Hero start   -->
-        <section class="hero">
-            <div class="container"></div>
+        <section class="site-main__hero hero">
+            <!--   Header start   -->
+            <header class="site-main__header site-header">
+                <div class="container">
+                    <div class="site-header__wrapper">
+                        <button class="site-header__btn" type="button"></button>
+                        <a class="logo-link" href="./index.html">
+                            <img class="logo-img" src="/images/logo.svg"
+                            width="160"
+                            height="32"
+                            alt="site logo">
+                        </a>
+                        <button class="site-header__menu" type="button"></button>
+                        <nav class="site-header__navigation nav">
+                            <ul class="nav__list">
+                                <li class="nav__items">
+                                    <a class="nav__link" href="./index.html">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="nav__items">
+                                    <a class="nav__link" href="#">
+                                        About us
+                                    </a>
+                                </li>
+                                <li class="nav__items">
+                                    <a class="nav__link" href="#">
+                                        Pricing
+                                    </a>
+                                </li>
+                                <li class="nav__items">
+                                    <a class="nav__link" href="#">
+                                        Contact us
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>              
+                </div>
+            </header>
+            <!--   Header finish   -->
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__textbox">
+                        <h1 class="hero__title">
+                            <title> Your digital business is in good hands with us! </title>
+                        </h1>
+                        <p class="hero__text">
+                            Make your work easier with an integrated ecosystem that lets all departments work properly together.
+                        </p>
+                    </div>
+                    <div class="hero__link-wrapper">
+                        <a class="hero__link" href="#">
+                            Watch video
+                        </a>
+                        <a class="hero__link" href="#">
+                            Get Started
+                        </a>
+                    </div>
+                    <picture>
+                        <source media="(min-width: 1324px)"
+                        srcset="/images/mac-big.png 1x, /images/mac-big@2x.png 2x"
+                        width="977"
+                        height="578">
+                        <source media="(min-width: 768px)"
+                        srcset="/images/mac-tablet.png 1x, /images/mac-tablet@2x.png 2x"
+                        width="677"
+                        height="378">
+                        <source media="(min-width: 375px)"
+                        srcset="/images/mac.png 1x, /images/mac@2x.png 2x"
+                        width="343"
+                        height="200">
+                        <img class="hero__img" src="/images/mac-small.png"
+                        srcset="/images/mac-small.png 1x, /images/mac-small@2x.png 2x"
+                        width="288"
+                        alt="macbook">
+                    </picture>
+                </div>
+            </div>
         </section>
         <!--   Hero finish   -->
     </main>
