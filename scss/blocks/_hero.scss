@@ -71,7 +71,7 @@
     height: 36px;
     background-image: url("/images/video.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .hero__link:not(:last-child) {

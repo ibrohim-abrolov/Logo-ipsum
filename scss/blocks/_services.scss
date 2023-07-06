@@ -1,0 +1,237 @@
+@use "../variables";
+@use "../mixins";
+
+.service {
+    padding-bottom: 90px;
+}
+
+.service__textbox {
+    max-width: 342px;
+    width: 100%;
+    margin: 0 auto;text-align: center;
+}
+
+.service__heading {
+    margin-top: 0;
+    margin-bottom: 7px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: var(--main-font-weight);
+    color: var(--main-secondary-color);
+}
+
+.service__paragraph {
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 22px;
+    color: var(--main-primary-color);
+}
+
+.service__btn {
+    display: none;
+}
+
+.service__list {
+    position: relative;
+    @include mixins.flexbox(row, center, center);
+    @include mixins.list-reset;
+}
+
+.service__items {
+    padding: 31px;
+    background-color: #f7f5ff;
+    border-radius: 8px;
+    transition: background-color 0.4s ease, border 0.4s ease;
+}
+
+.service__items:hover {
+    background-color: #ebebeb;
+    border: 0.96px solid #ff007a;
+}
+
+.service__items::before {
+    display: block;
+    content: "";
+    width: 111px;
+    height: 18px;
+    background-image: url("/images/stars.svg");
+    background-repeat: no-repeat;
+}
+
+.service__items--middle {
+    display: none;
+}
+
+.service__items--last {
+    display: none;
+}
+
+.service__text-wrapper {
+    max-width: 258px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.service__text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 155%;
+    color: var(--main-secondary-color);
+    letter-spacing: 0.32px;
+}
+
+.service__mini {
+    margin-left: 60px;
+}
+
+.service__mini-text {
+    margin-top: 0;
+    margin-bottom: 7px;
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--main-secondary-color);
+    letter-spacing: -0.16px;
+}
+
+.service__items--initial::after {
+    position: absolute;
+    top: 235px;
+    display: block;
+    content: "";
+    width: 54px;
+    height: 54px;
+    background-image: url("/images/simmons.svg");
+    background-repeat: no-repeat;
+}
+
+.service__items--middle::after {
+    position: absolute;
+    top: 235px;
+    display: block;
+    content: "";
+    width: 54px;
+    height: 54px;
+    background-image: url("/images/darell.svg");
+    background-repeat: no-repeat;
+}
+
+.service__items--last::after {
+    position: absolute;
+    top: 235px;
+    display: block;
+    content: "";
+    width: 54px;
+    height: 54px;
+    background-image: url("/images/henry.svg");
+    background-repeat: no-repeat;
+}
+
+.service__about {
+    margin: 0;
+    font-family: var(--main-font-family);
+    font-size: 15px;
+    line-height: 150%;
+    color: var(--main-primary-color);
+}
+
+@media only screen and (min-width: 600px) {
+    .service__list {
+        justify-content: space-evenly;
+    }
+
+    .service__textbox {
+        max-width: 410px;
+        width: 100%;
+    }
+
+    .service__items {
+        padding: 10px;
+    }
+
+    .service__items::after {
+        top: 210px;
+    }
+
+    .service__items--middle {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 680px) {
+    .service__items {
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width: 880px) {
+    .service__items {
+        padding: 10px;
+    }
+
+    .service__items--last {
+        display: block;
+    }   
+}
+
+@media only screen and (min-width: 1050px) {
+    .service__items {
+        padding: 20px;
+    }
+
+    .service__items::after {
+        top: 220px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .service {
+        padding-bottom: 100px;
+    }
+
+    .service__wrapper {
+        padding-top: 100px;
+        padding-bottom: 175px;
+        transition: background-color 0.4s ease;
+    }
+
+    .service__wrapper:hover {
+        background-color: #fff;
+    }
+
+    .service__textbox {
+        max-width: 622px;
+        width: 100%;
+    }
+
+    .service__heading {
+        font-size: 48px;
+        line-height: var(--main-line-height);
+        letter-spacing: -0.48px;
+    }
+
+    .service__paragraph {
+        margin-bottom: 80px;
+        line-height: 155%;
+    }
+
+    .service__items {
+        padding: 31px;
+    }
+
+    .service__items::after {
+        top: 210px;
+    }
+
+    .service__text-wrapper {
+        max-width: 320px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .service__text-wrapper {
+        max-width: 344px;
+        width: 100%;
+    }
+}
