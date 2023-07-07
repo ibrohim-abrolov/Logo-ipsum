@@ -12,7 +12,7 @@
     
     <main class="site-main">
         <!--   Hero start   -->
-        <section class="site-main__hero hero" aria-label="entrance to our website">
+        <section class="site-main__hero hero" 
             <!--   Header start   -->
             <header class="site-main__header site-header">
                 <div class="container">
@@ -25,7 +25,7 @@
                             alt="site logo">
                         </a>
                         <button class="site-header__menu" type="button"></button>
-                        <nav class="site-header__navigation nav">
+                        <nav class="site-header__navigation nav" aria-label="site navigation">
                             <ul class="nav__list">
                                 <li class="nav__items">
                                     <a class="nav__link" href="./index.html">
@@ -95,16 +95,16 @@
         <!--   Hero finish   -->
         
         <!--   Software start   -->
-        <section class="software" aria-label="our software">
+        <section class="software">
             <div class="container">
                 <div class="software__main-textbox">
                     <h1 class="visually-hidden">
                         Greeting with our software solutions
                     </h1>
-                    <h2 class="software__heading">
+                    <h2 class="software__heading" title="software solutions">
                         Software Solutions That Fit Your Needs
                     </h2>
-                    <p class="software__main-text">
+                    <p class="software__main-text" title="information">
                         The features to boost your productivity
                     </p>
                 </div>
@@ -116,10 +116,10 @@
                         height="266"
                         alt="task management">
                         <div class="software__textbox">
-                            <h3 class="software__title">
+                            <h3 class="software__title" title="Task management">
                                 Task Management
                             </h3>
-                            <p class="software__text">
+                            <p class="software__text" title="information"> 
                                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                             </p>
                         </div>
@@ -134,10 +134,10 @@
                         height="277"
                         alt="automation">
                         <div class="software__textbox">
-                            <h3 class="software__title">
+                            <h3 class="software__title" title="Automation">
                                 Automation
                             </h3>
-                            <p class="software__text">
+                            <p class="software__text" title="information">
                                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                             </p>
                         </div>
@@ -152,10 +152,10 @@
                         height="288"
                         alt="software tools">
                         <div class="software__textbox">
-                            <h3 class="software__title">
+                            <h3 class="software__title" title="Budgeting tools">
                                 Budgeting Tools
                             </h3>
-                            <p class="software__text">
+                            <p class="software__text" title="information">
                                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                             </p>
                         </div>
@@ -169,7 +169,7 @@
         <!--   Software finish  -->
         
         <!--   Advance start    -->
-        <section class="advance" aria-label="advance protection">
+        <section class="advance">
             <div class="container">
                 <h1 class="visually-hidden">
                     Greeting with our advance protection
@@ -223,7 +223,7 @@
         <!--   Advance finish   -->
         
         <!--   Services start   -->
-        <section class="service" aria-label="servicing">
+        <section class="service">
             <div class="container">
                 <div class="service__wrapper">
                     <h1 class="visually-hidden">
@@ -292,7 +292,7 @@
         <!--   Services finish  -->
         
         <!--   Price start    -->
-        <section class="price" aria-label="pricing">
+        <section class="price">
             <div class="container">
                 <div class="price__wrapper">
                     <h1 class="visually-hidden">
@@ -443,7 +443,7 @@
         <!--   Price finish   -->
         
         <!--   Article start  -->
-        <article class="site-article" aria-label="site form">
+        <article class="site-article">
             <div class="container">
                 <div class="site-article__wrapper">
                     <h1 class="visually-hidden">
@@ -457,10 +457,10 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
                         </p>
                     </div>
-                    <form class="site-article__form form" action="https://www.lipsum.com/" method="POST">
+                    <form class="site-article__form form" action="https://www.lipsum.com/" method="POST" title="site form">
                         <div class="form__wrapper">
                             <input class="form__input" type="email" placeholder="Enter your email" aria-label="enter your email" required>
-                            <button class="form__btn" type="submit">
+                            <button class="form__btn" type="submit" role="button" aria-label="Sign up">
                                 Sign up
                             </button>
                         </div>
@@ -474,9 +474,9 @@
             </div>
         </article>
         <!--   Article finish -->
-
+        
         <!--  Info  start   -->
-        <section class="info" aria-label="information about news">
+        <section class="info">
             <div class="container">
                 <h1 class="visually-hidden">
                     Greeting with recent news
@@ -506,8 +506,8 @@
                             <div class="info__mini-textbox">
                                 <strong class="info__bold">
                                     Social media
-                                </strong>
-                                <time class="info__time" datetime="05062023">
+                                </strong>                           
+                                <time class="info__time" datetime="05-06-2023 10:00">
                                     5 min read
                                 </time>
                             </div>
@@ -534,7 +534,7 @@
                                 <strong class="info__bold">
                                     Social media
                                 </strong>
-                                <time class="info__time" datetime="05062023">
+                                <time class="info__time" datetime="05-06-2023 10:00">
                                     5 min read
                                 </time>
                             </div>
@@ -561,7 +561,7 @@
                                 <strong class="info__bold">
                                     Social media
                                 </strong>
-                                <time class="info__time" datetime="05062023">
+                                <time class="info__time" datetime="05-06-2023 10:00">
                                     5 min read
                                 </time>
                             </div>
@@ -585,8 +585,80 @@
     </main>
     
     <!--   Footer start   -->
-    <footer class="site-footer" aria-label="navigation and links">
+    <footer class="site-footer footer">
         <div class="container">
+            <div class="footer__main-wrapper">
+                <div class="footer__list-wrapper">
+                    <a class="footer-link" href="#">
+                        <img src="/images/logo.svg"
+                        width="144"
+                        height="29"
+                        alt="footer logo">
+                    </a>
+                    <ul class="footer__list">
+                        <div class="footer__outer">
+                            <li class="footer__items">
+                                <a class="footer__link" href="./index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="footer__items footer__items--active">
+                                <a class="footer__link" href="#">
+                                    About us
+                                </a>
+                            </li>
+                        </div>
+                        <div class="footer__inner">
+                            <li class="footer__items">
+                                <a class="footer__link" href="#">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li class="footer__items footer__items--active">
+                                <a class="footer__link" href="#">
+                                    Contact us
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <form class="footer__form" action="https://htmlacademy.ru/" method="POST" title="site form">
+                    <label class="footer__label" for="email" aria-label="enter email">
+                        Subscribe
+                    </label>
+                    <div class="footer__form-wrapper">
+                        <input class="footer__input" id="email" type="email" name="email" placeholder="Enter your email" aria-label="enter your email" required>
+                        <button class="footer__btn" type="submit" role="button" aria-label="Sign up">
+                            Sign up
+                        </button>                   
+                    </div>
+                    <p class="footer__text">
+                        By subscribing you agree to with our Privacy Policy
+                    </p>
+                </form>
+            </div>
+            <div class="footer__bottom">
+                <ul class="footer__bottom-list">
+                    <li class="footer__bottom-items">
+                        <a class="footer__bottom-link" href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li class="footer__bottom-items">
+                        <a class="footer__bottom-link" href="#">
+                            Terms of Service
+                        </a>
+                    </li>
+                    <li class="footer__bottom-items">
+                        <a class="footer__bottom-link" href="#">
+                            Cookies Settings
+                        </a>
+                    </li>
+                </ul>
+                <span class="footer__bottom-span">
+                    2022 airdokan. All right reserved.
+                </span>
+            </div>
         </div>
     </footer>
     <!--   Footer finish   -->
