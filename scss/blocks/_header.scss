@@ -7,7 +7,7 @@
 }
 
 .site-header__wrapper {
-    @include mixins.flexbox(row, center, space-around);
+    @include mixins.flexbox(row, center, space-between);
 }
 
 .site-header__btn {
@@ -73,9 +73,18 @@
     .nav__list {
         @include mixins.flexbox(row, center, flex-start);
     }
+
+    .nav__items:not(:last-child) {
+        margin-right: 25px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
+    .site-header__btn {
+        width: 32px;
+        height: 32px;
+    }
+    
     .nav__items:not(:last-child) {
         margin-right: 40px;
     }

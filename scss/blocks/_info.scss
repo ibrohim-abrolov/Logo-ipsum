@@ -3,6 +3,7 @@
 
 .info {
     padding: 80px 0;
+    background-color: #f4fbff;
 }
 
 .info__textbox {
@@ -66,10 +67,10 @@
 
 .info__controller {
     padding: 24px 0;
-    transition: background-color 0.4s ease;
     border-radius: 8px;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
+    transition: background-color 0.4s ease;
 }
 
 .info__controller:hover {

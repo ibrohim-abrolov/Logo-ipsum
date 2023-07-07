@@ -389,7 +389,7 @@ body {
   padding: 0;
   font-family: "Nunito", "Arial", sans-serif;
   font-weight: 400;
-  background-color: #e5e5e5;
+  background-color: #fff;
   overflow-x: hidden;
   letter-spacing: -0.32px;
 }
@@ -440,8 +440,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .site-header__btn {
@@ -521,8 +522,15 @@ img {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .nav__items:not(:last-child) {
+    margin-right: 25px;
+  }
 }
 @media only screen and (min-width: 992px) {
+  .site-header__btn {
+    width: 32px;
+    height: 32px;
+  }
   .nav__items:not(:last-child) {
     margin-right: 40px;
   }
@@ -541,7 +549,7 @@ img {
 .hero__textbox {
   max-width: 342px;
   width: 100%;
-  margin: 0 auto 90px auto;
+  margin: 0 auto 80px auto;
   text-align: center;
 }
 
@@ -739,7 +747,7 @@ img {
 }
 
 .software__items:hover {
-  background-color: #ebebeb;
+  background-color: #f7f5ff;
 }
 
 .software__items:not(:last-child) {
@@ -860,13 +868,13 @@ img {
 
 .advance__items {
   padding: 20px 5px;
-  background-color: #fcfbff;
+  background-color: #fff;
   -webkit-transition: background-color 0.4s ease;
   transition: background-color 0.4s ease;
 }
 
 .advance__items:hover {
-  background-color: #ebebeb;
+  background-color: #fcfbff;
 }
 
 .advance__items:not(:last-child) {
@@ -1077,12 +1085,11 @@ img {
   padding: 31px;
   background-color: #f7f5ff;
   border-radius: 8px;
-  -webkit-transition: background-color 0.4s ease, border 0.4s ease;
-  transition: background-color 0.4s ease, border 0.4s ease;
+  -webkit-transition: border 0.4s ease;
+  transition: border 0.4s ease;
 }
 
 .service__items:hover {
-  background-color: #ebebeb;
   border: 0.96px solid #ff007a;
 }
 
@@ -1311,6 +1318,7 @@ img {
 
 .price__items:hover {
   border: 1px solid #ff007a;
+  cursor: pointer;
 }
 
 .price__items:not(:last-child) {
@@ -1619,6 +1627,7 @@ img {
 }
 .info {
   padding: 80px 0;
+  background-color: #f4fbff;
 }
 
 .info__textbox {
@@ -1690,11 +1699,11 @@ img {
 
 .info__controller {
   padding: 24px 0;
-  -webkit-transition: background-color 0.4s ease;
-  transition: background-color 0.4s ease;
   border-radius: 8px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+  -webkit-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
 }
 
 .info__controller:hover {
