@@ -110,8 +110,8 @@
                 </div>
                 <ul class="software__list">
                     <li class="software__items">
-                        <img class="software__img" src="/images/task-management.svg"
-                        srcset="/images/task-management.svg 1x, /images/task-management@2x.svg 2x"
+                        <img class="software__img" src="./images/task-management.svg"
+                        srcset="./images/task-management.svg 1x, ./images/task-management@2x.svg 2x"
                         width="300"
                         height="266"
                         alt="task management">
@@ -128,8 +128,8 @@
                         </a>
                     </li>
                     <li class="software__items">
-                        <img class="software__img" src="/images/automation.svg"
-                        srcset="/images/automation.svg 1x, /images/automation@2x.svg 2x"
+                        <img class="software__img" src="./images/automation.svg"
+                        srcset="./images/automation.svg 1x, ./images/automation@2x.svg 2x"
                         width="320"
                         height="277"
                         alt="automation">
@@ -146,8 +146,8 @@
                         </a>
                     </li>
                     <li class="software__items">
-                        <img class="software__img" src="/images/budgeting.svg"
-                        srcset="/images/budgeting.svg 1x, /images/budgeting@2x.svg 2x"
+                        <img class="software__img" src="./images/budgeting.svg"
+                        srcset="./images/budgeting.svg 1x, ./images/budgeting@2x.svg 2x"
                         width="310"
                         height="288"
                         alt="software tools">
@@ -176,8 +176,8 @@
                 </h1>
                 <ul class="advance__list">
                     <li class="advance__items">
-                        <img class="advance__img advance__img--first" src="/images/easy-protection.svg"
-                        srcset="/images/easy-protection.svg 1x, /images/easy-protection.svg 2x"
+                        <img class="advance__img advance__img--first" src="./images/easy-protection.svg"
+                        srcset="./images/easy-protection.svg 1x, ./images/easy-protection.svg 2x"
                         width="332"
                         height="352"
                         alt="advance protection">                      
@@ -198,8 +198,8 @@
                         </div>
                     </li>
                     <li class="advance__items">
-                        <img class="advance__img advance__img--last" src="/images/protection-mode.svg"
-                        srcset="/images/protection-mode.svg 1x, /images/protection-mode.svg 2x"
+                        <img class="advance__img advance__img--last" src="./images/protection-mode.svg"
+                        srcset="./images/protection-mode.svg 1x, ./images/protection-mode.svg 2x"
                         alt="advance mode easy">
                         <div class="advance__inner">
                             <div class="advance__textbox">
@@ -237,7 +237,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         </p>
                     </div>
-                    <button class="service__btn service__btn--left" type="button"></button>
+                    <button class="service__btn service__btn--left" type="button" role="button" aria-label="switch"></button>
                     <ul class="service__list">
                         <li class="service__items service__items--initial">
                             <div class="service__text-wrapper">
@@ -285,7 +285,7 @@
                             </div>
                         </li>
                     </ul>
-                    <button class="service__btn service__btn--right" type="button"></button>
+                    <button class="service__btn service__btn--right" type="button" role="button" aria-label="switch"></button>
                 </div>
             </div>
         </section>
@@ -459,7 +459,7 @@
                     </div>
                     <form class="site-article__form form" action="https://www.lipsum.com/" method="POST" title="site form">
                         <div class="form__wrapper">
-                            <input class="form__input" type="email" placeholder="Enter your email" aria-label="enter your email" required>
+                            <input class="form__input" type="email" name="email" placeholder="Enter your email" aria-label="enter your email" required>
                             <button class="form__btn" type="submit" role="button" aria-label="Sign up">
                                 Sign up
                             </button>
@@ -498,9 +498,8 @@
                 </div>
                 <ul class="info__list">
                     <li class="info__items">
-                        <img class="info__img"
-                        src="/images/laptop.png"
-                        srcset="/images/laptop.png 1x, /images/laptop@2x.png 2x"
+                        <img class="info__img" src="./images/laptop.png"
+                        srcset="./images/laptop.png 1x, ./images/laptop@2x.png 2x"
                         alt="news images">
                         <div class="info__controller">
                             <div class="info__mini-textbox">
@@ -525,9 +524,8 @@
                         </div>
                     </li>
                     <li class="info__items">
-                        <img class="info__img"
-                        src="/images/conversation.png"
-                        srcset="/images/conversation.png 1x, /images/conversation@2x.png 2x"
+                        <img class="info__img" src="./images/conversation.png"
+                        srcset="./images/conversation.png 1x, ./images/conversation@2x.png 2x"
                         alt="news images">
                         <div class="info__controller">
                             <div class="info__mini-textbox">
@@ -552,9 +550,8 @@
                         </div>
                     </li>
                     <li class="info__items">
-                        <img class="info__img"
-                        src="/images/phone-typing.png"
-                        srcset="/images/phone-typing.png 1x, /images/phone-typing@2x.png 2x"
+                        <img class="info__img" src="./images/phone-typing.png"
+                        srcset="./images/phone-typing.png 1x, ./images/phone-typing@2x.png 2x"
                         alt="news images">
                         <div class="info__controller">
                             <div class="info__mini-textbox">
@@ -623,7 +620,7 @@
                     </ul>
                 </div>
                 <form class="footer__form" action="https://htmlacademy.ru/" method="POST" title="site form">
-                    <label class="footer__label" for="email" aria-label="enter email">
+                    <label class="footer__label" for="email" aria-label="enter email" name="subscribe">
                         Subscribe
                     </label>
                     <div class="footer__form-wrapper">

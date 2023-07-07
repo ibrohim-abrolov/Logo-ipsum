@@ -227,6 +227,14 @@
         max-width: 320px;
         width: 100%;
     }
+
+    .service__btn--left {
+        display: inline-block;
+        border: 0.96px solid #ff007a;
+        border-radius: 148.012px;
+        background-image: url("/images/left-icon.svg");
+        background-color: none;
+    }
 }
 
 @media only screen and (min-width: 1300px) {
